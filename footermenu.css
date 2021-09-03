@@ -150,3 +150,14 @@
      }
 
  }
+
+
+ /* 최소화 창 지원 */
+ @media screen and (max-width:1199px){
+   
+   #footer_menu{
+       width: 1400px;
+       
+   }
+
+}

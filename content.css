@@ -19,7 +19,7 @@ button{
     /* margin: 0 auto; */
     height: 640px;
     position: relative;
-    background-color: blue;
+    background-color: white;
     /* background-image: url(img/main2.jpg);
     background-repeat: no-repeat;
     background-size: cover; */
@@ -307,7 +307,7 @@ button{
   .nc_wrap .nc{
     width: 1200px;
     margin: 0 auto;
-    padding: 150px;
+    padding-top: 150px;
   }
 
   /* 서비스준비중입니다 */
@@ -393,4 +393,15 @@ button{
     border-right: 1px solid black;
   }
  } 
+
+
+/* 최소화 창 지원 */
+@media screen and (max-width:1199px){
+   
+  #contents{
+    width: 1400px;
+  }
+
+}
+ 
  

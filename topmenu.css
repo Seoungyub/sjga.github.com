@@ -84,7 +84,7 @@ li{
 
 #menu .logo_wrap a{
    display: block;
-   }
+}
 
 
  #menu .logo_wrap img{
@@ -360,6 +360,13 @@ height: 25px;
     right: 15%;
 }
 
+/* 
+@media screen and (max-width:999px){
+    header{
+        width: 1400px;
+    }
+} */
+
 
 /* 1920전까지 */
 @media screen and (max-width:1919px){
@@ -425,4 +432,16 @@ height: 25px;
         left: 70%;
     } */
 
+}
+
+/* 최소화 창 지원 */
+@media screen and (max-width:1199px){
+    #menu_wrap{
+        width: 1400px;
+    }
+
+    #menu{
+        width: 1400px;
+        position: relative;
+  }
 }
