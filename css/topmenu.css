@@ -1,0 +1,447 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Nanum Gothic";
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+/* 상위div를 absolute, 하위div를 sticky로 두엇다! */
+#menu_wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    /* height: 1800px; 메뉴바 ㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂ 전체 길이만큼 설정 */
+}
+
+#menu{
+    width: 100%;
+    box-shadow: 0 0 3px 0;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    margin-top: 0;
+    height: 85px;
+}
+
+ /* IE10+
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #menu{
+       position: fixed;
+    }
+   }
+    
+  IE6,7,8
+@media \0screen\,screen\9 {
+    #menu{
+        position: fixed;
+    }
+   }
+
+   IE9,10
+@media screen and (min-width:0\0){
+    #menu{
+        position: fixed;
+    }
+   }  */
+   
+
+/* 큰화면 반응형으로 작업할때 상단메뉴 줄이는거 */
+header{
+    width: 80%;
+    margin: 0 auto;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+li{
+    list-style-type: none;
+}
+
+#menu .logo_wrap{
+ width: 200px;
+ height: 50px;
+ padding: 15px 20px 15px 30px;
+ float: left;
+ margin-left: 20px;
+}
+
+#menu .logo_wrap a{
+   display: block;
+}
+
+
+ #menu .logo_wrap img{
+ width: 100%;
+ height: 100%;
+} 
+
+#menu header{
+ position: relative;
+}
+
+#menu header nav{
+margin-left: 140px;
+}
+
+#menu header nav #m{
+width: 600px;
+height: 60px;
+float: left;
+}
+
+#menu header nav .icon{
+    float: right;
+    margin-right: 50px;
+}
+
+/* 탑메뉴의 갈이는 지정되어있지 않아 가장큰 크기를따라감. 아이콘이 제일큰데 규격화되어잇지않은이유가 a클래스에서 1.4를 추가로 먹고잇음 해결요먕 */
+#menu header nav .icon ul li a{
+display: block;
+height: 25px;
+}
+
+#menu header nav .icon ul li{
+    font-size: 20px;
+    padding: 0px;
+    width: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    float: left;
+    height:25px;
+}
+
+#menu header nav .icon p:nth-child(3){
+   margin-right: 100px;
+}
+
+#menu header nav #m ul li{
+    width: 150px;
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 900;
+    display: inline-block; /* ul의 display는 block형식이기때문에 정렬을 위해 바꿈 */
+    font-size: 1.0em;
+}
+
+#menu header nav #m a .underline{
+  position: relative;
+}
+
+#menu header nav #m a .underline::after{
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: 0.3s;
+    width: 0;
+}
+
+#menu header nav #m a .underline:hover::after{
+    width: 100%; 
+    left: 0;
+}
+
+#detail_wrap{
+    opacity: 0;
+    visibility: hidden;
+    background: white;
+    height: 0px;
+    clear: both;
+    margin-left: 130px;
+}
+
+#detail_wrap .dropdown{
+     float: left;
+     margin-left: 0px;
+     max-width: 156px;    
+     opacity: 0;
+     visibility: hidden;
+}
+
+#detail_wrap .dropdown:nth-child(1){
+    margin-left: 140px;
+}
+
+#detail_wrap .dropdown ul li{
+    width: 150px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+#detail_wrap .dropdown a:hover{
+    font-weight: 600;
+}
+
+.dropdown_underline{
+    position: relative;
+    
+}
+
+.dropdown_underline::before{
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0; right: 0;
+  height: 2px;
+  background-color: gray;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0s, transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_underline:hover::before{
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.2s, transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+
+#menu.show1{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
+    height: 325px;
+}
+
+#detail_wrap.show1{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
+    height: 240px;
+}
+
+#detail_wrap .dropdown.show2{
+    transition: all 1s;
+    opacity: 1;
+    visibility: visible;
+}
+
+#menu header #icon_detail_wrap{
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    background: white;
+    height: 0px;
+    position: absolute;
+    right: 50px;
+    top: 60px;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+#menu header #icon_detail_wrap #icon_detail{
+    padding: 30px 0px 10px 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#menu header #icon_detail_wrap #icon_detail li{
+    width: 150px;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    font-weight: 600;
+}
+
+#menu header #icon_detail_wrap a:hover{
+    font-weight: 600;
+ }
+
+#menu header #icon_detail_wrap p:hover{
+   cursor: pointer;
+   font-weight: 600;
+}
+
+#menu header #icon_detail_wrap.show3{
+ opacity: 1;
+ visibility: visible; 
+ transition: all 0.3s;
+ height: 160px;
+}
+
+#menu header #icon_detail_wrap #icon_detail.show4{
+ opacity: 1;
+ visibility: visible;
+ transition: all 1s;
+}
+
+.search_wrap{
+    position: relative;
+    width: 100%;
+    display: block;
+}   
+
+.search_wrap .search_hidden{
+    position: absolute;
+    top: 12.5px;
+    left: 20%;
+    width: 0px;
+    height: 60px;
+    background-color: rgb(175, 175, 175);
+    border-radius: 50px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.search_wrap .search_hidden.active{
+    display: block;
+    opacity: 1;
+    width: 60%;
+}
+
+
+
+.search_wrap .search_hidden .search_input{
+    width:990px;
+    height: 40px;
+    border:none;
+    outline:none;
+    position: absolute;
+    top:10px;
+    left:30px;
+    padding:0px 70px 0 20px;
+    color: white;
+    background-color: rgb(175, 175, 175);
+}
+
+.search_wrap .search_hidden .search_input::placeholder{
+    color: white;
+}
+
+.search_wrap .search_hidden .search_icon{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top :0;
+    right: 0;
+    background-color: rgb(175, 175, 175);
+    font-size: 1em;
+    color: white;
+}
+
+.search_wrap .close{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 15px;
+    right: 25%;
+    border: none;
+    opacity: 0;
+    font-size: 1.2em;
+    transition: all 1s ease-in-out;
+}
+
+.search_wrap .close.active{
+    opacity: 1;
+    right: 15%;
+}
+
+/* 
+@media screen and (max-width:999px){
+    header{
+        width: 1400px;
+    }
+} */
+
+
+/* 1920전까지 */
+@media screen and (max-width:1919px){
+   header{
+       width: 100%;
+   }
+}
+
+/* 1920부터 */
+@media screen and (min-width:1920px){
+
+    /* #menu_wrap{
+        height: 2000px; 메뉴바 ㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂ 전체 길이만큼 설정
+    } */
+    
+    /* header{
+        width: 80%;
+        margin: 0 auto;
+    } */
+
+    /* 1920 x 1080은 상단메뉴가 width100으로 되어잇음 */
+    /* #menu .logo_wrap{
+        width: 250px;
+        height: 75px;
+        padding: 15px 20px 10px 30px;
+    } */
+
+
+    /* #menu header nav .icon ul li{
+        padding-top: 40px;
+    }
+
+    #menu header nav #m ul li{
+        padding-top: 40px;
+    }
+
+    #menu header #icon_detail_wrap{
+        top: 80px;
+    }
+
+    .search_wrap .close{
+        top: 20px;
+    }
+
+    .search_wrap .search_hidden{
+        top: 20px;
+    }
+
+    #detail_wrap{
+        margin-left: 180px;
+    }
+          */
+    /* .search_wrap .search_hidden.active{
+        width: 40%;
+        left: 30%;
+    }
+
+    .search_wrap .close{
+       left: 60%;
+    }
+    
+    .search_wrap .close.active{
+        left: 70%;
+    } */
+
+}
+
+/* 최소화 창 지원 */
+@media screen and (max-width:1199px){
+    #menu_wrap{
+        width: 1400px;
+    }
+
+    #menu{
+        width: 1400px;
+        position: relative;
+  }
+}
