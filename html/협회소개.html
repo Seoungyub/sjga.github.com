@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>협회소개</title>
+   <style>
+    </style>
+    <!-- 제이쿼리 CDN -->
+    <script
+     src="https://code.jquery.com/jquery-3.6.0.min.js"
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+     crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'>
+
+    <!-- 스타일 -->
+    <link href="/css/topmenu.css" rel="stylesheet">
+    <link href="/css/협회소개.css" rel="stylesheet">
+    <link href="/css/footermenu.css" rel="stylesheet">
+   
+    
+    <!-- 폰트 -->
+    <script src="https://kit.fontawesome.com/8d69e61b4d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+
+    <div id="menu_wrap">
+        <div id="menu">
+
+          <div class="search_wrap">
+           <div class="search_hidden">
+             <input type="text" class="search_input" placeholder="내용을 입력하세요"
+             onkeypress="if( event.keyCode == 13 ){enterkey();}">
+             <button class="search_icon"><i class="fas fa-search"></i></button>
+           </div>
+           <button class="close"><i class="fas fa-times"></i></button>
+         </div>
+    
+        <header>
+          <div class="logo_wrap">
+            <a href="index.html"><img src="/img/세종시골프협회2.jpg"></a>
+            </div>
+           <nav>
+                 
+            <!-- 밑에 있는 주석사용은 display : inline-block의 4px 공백을 없에기 위함 -->
+            <div id="m">
+              <ul>
+               <li><a><span class="underline">협회소개</span></a></li><!--
+               --><li><a><span class="underline">대회안내</span></a></li><!--
+               --><li><a><span class="underline">선수등록안내</span></a></li><!--
+               --><li><a><span class="underline">자료실</span></a></li>
+              </ul>
+            </div>
+    
+               <div class="icon">
+                 <ul>
+               <li><a><i class="far fa-user"></i></a></li><!--
+               --><li><a><i class="fas fa-user-plus"></i></a></li><!--
+               --><li class="icon_search"><i class="fas fa-search"></i></li>
+              </ul>
+            </div>
+           </nav>
+    
+           <div id="detail_wrap">
+    
+            <div class="dropdown">
+              <ul>
+            <li><a href="#"><span class="dropdown_underline">협회소개</span></a></li>
+            <li><a><span class="dropdown_underline">협회연역</span></a></li>
+            <li><a><span class="dropdown_underline">인사말</span></a></li>
+            <li><a><span class="dropdown_underline">임원소개</span></a></li>
+            <li><a><span class="dropdown_underline">오시는길</span></a></li>
+              </ul>
+            </div>
+        
+            <div class="dropdown">
+                <ul>
+              <li><a><span class="dropdown_underline">대회일정</span></a></li>
+              <li><a><span class="dropdown_underline">대회 안내 및 결과</span></a></li>
+               </ul>
+            </div>
+        
+            <div class="dropdown">
+              <ul>
+              <li><a><span class="dropdown_underline">선수등록안내</span></a></li>
+                <li><a><span class="dropdown_underline">선수등록</span></a></li>
+                  <li><a><span class="dropdown_underline">선수정보조회</span></a></li>
+                </ul>
+            </div>
+        
+            <div class="dropdown">
+              <ul>
+              <li><a><span class="dropdown_underline">공지사항</span></a></li>
+              <li><a><span class="dropdown_underline">사진</span></a></li>
+              <li><a><span class="dropdown_underline">골프규칙</span></a></li>
+              <li><a><span class="dropdown_underline">핸디캡</span></a></li>
+              <li><a><span class="dropdown_underline">간이핸디캡사정</span></a></li>
+              <li><a><span class="dropdown_underline">자유게시판</span></a></li>
+            </ul>
+            </div>
+         </div>
+    
+         <div id="icon_detail_wrap">
+           <div id="icon_detail">
+           <ul>
+          <li><a href="login.html"><span class="dropdown_underline">로그인</span></a></li>
+          <li><a href="register.html"><span class="dropdown_underline">회원가입</span></a></li>
+          <li><a href="unknown"><span class="dropdown_underline">미정</span></a></li>
+        </ul>
+      </div>
+        </div>
+    
+        </header>
+    </div><!-- 최상단메뉴의 최상위<> end-->
+    </div>
+    <!-- 반응형작업을 위한 최상위<> -->
+    
+
+
+ <!-- 컨텐츠전체를 묶음 -->
+  <content>
+    <div id="middle1" class="ganpan">
+      <img src="/img/testbanner1.PNG">
+    </div>
+ <!--해상도 조절용 묶음-->
+    <div class="main_wrap">
+       
+
+      <!-- 바로가기 만들어줄거 묶어 -->
+      <div class="main_left_wrap">
+        <div class="fix_wrap">
+        <ul>
+          <li class="fix_title">협회소개</li>
+          <a href="#middle1"><li>협회소개</li></a>
+          <a href="#middle2"><li>협회연역</li></a>
+          <a href="#middle3"><li>인사말</li></a>
+          <a href="#middle4"><li>임원소개</li></a>
+          <a href="#middle5"><li>오시는길</li>
+        </ul>
+      </div>
+       </div>
+
+      <!-- 내용 보여줄거 묶고 -->
+      <div class="main_middle_wrap">
+        <div class="middle1" id="">
+          <p class="p_title">협회소개</p>
+          <p class="p_object">경기도 골프협회는 경기도를 대표하는 골프 계원으로 어쩌구 저쩌구</p>
+        </div>
+        
+        <div class="middle2" id="middle2">
+          <p class="p_title">협회연혁</p>
+          <p class="p_object">경기도 골프협회는 경기도를 대표하는 골프 계원으로 어쩌구 저쩌구</p>
+        </div>
+        
+        
+        <div class="middle3" id="middle3">
+          <p class="p_title">인사말</p>
+          <p class="p_object">경기도 골프협회는 경기도를 대표하는 골프 계원으로 어쩌구 저쩌구</p>
+        </div>
+        
+        <div class="middle4" id="middle4">
+          <p class="p_title">임원소개</p>
+          <p class="p_object">경기도 골프협회는 경기도를 대표하는 골프 계원으로 어쩌구 저쩌구</p>
+        </div>
+        
+        <div class="middle5" id="middle5">
+          <p class="p_title">오시는길</p>
+          <p class="p_object">경기도 골프협회는 경기도를 대표하는 골프 계원으로 어쩌구 저쩌구</p>
+        </div>
+      </div>
+
+      <!-- 오른쪽 나머지 묶어 근데뭐하지 -->
+     
+      <div class="main_right_wrap">right</div>
+
+
+    </div>
+  </content>
+    
+
+      <div id="footer_menu">
+      <footer>
+        <div class="b_menu1_wrap">
+         <nav class="b_menu1">
+         <ul>
+          <li><a href="#">이용약관</a></li>
+          <li class="spread">|</li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li class="spread">|</li>
+          <li><a href="#">찾아오시는 길</a></li>
+          <li class="spread">|</li>
+          <li><a href="#">이메일무단수집거부</a></li>
+         </ul>
+        </nav>
+      </div>
+       <div class="b_menu2_wrap">
+         <div class="b_menu2">
+         <div class="b_img_wrap">
+         <img src="/img/SJGA.jpg">
+        </div>
+         <div class="copyright_wrap">
+         <div>세종특별자치시 다정중앙로 52 페스티발2 317호 &nbsp;&nbsp;Mobile: 010.2201.0797 &nbsp;&nbsp;TEL: 044.715.7053 &nbsp;&nbsp;FAX: 044.715.7054 &nbsp;&nbsp;Email: msy@itn.co.kr</div>
+         <div>Copyright© 1998-2.18.Sejong Golf Association Allright reserved.</div>
+        </div>
+       </div>
+      </div>
+      </footer>
+    </div>
+    
+
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+      <script  src="/script/script.js"></script>
+</body>
+</html>
