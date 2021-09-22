@@ -6,7 +6,7 @@ var container = document.getElementById('map');
 		};
 
 		var map = new kakao.maps.Map(container, options);
-	}
+	};
 
 
 	$(function(){
