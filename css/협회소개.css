@@ -69,7 +69,8 @@ button{
       float: left;
       margin-left: 50px;
       width: calc(100% - 250px);
-      height: 4000px;
+      /* height: 4000px; */
+       overflow: hidden;
       /* border: 1px solid black; */
       box-sizing: border-box;
    }
