@@ -4,8 +4,17 @@ function kakaoMap(){
 				center: new kakao.maps.LatLng(36.4951814591185, 127.249257297753),
 				level: 3
 			};
-	
+
+			//지도생성
 			var map = new kakao.maps.Map(container, options);
+
+			// 마커가 표시될 위치입니다 
+            var markerPosition  = new kakao.maps.LatLng(36.4951814591185, 127.249257297753); 
+
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+            position: markerPosition
+            }); 
 
 			// 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
              var mapTypeControl = new kakao.maps.MapTypeControl();
