@@ -2,7 +2,7 @@
     width: 100%;
     height: 200px;
     background-color: rgb(171, 171, 171);
-    position: relative;
+    /* position: relative; */
 }
 
 #footer_menu footer .b_menu1_wrap{
