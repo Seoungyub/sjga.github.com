@@ -250,6 +250,7 @@ height: 25px;
     right: 50px;
     top: 60px;
     border-radius: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     font-size: 0.8em;
 }
 
@@ -257,6 +258,7 @@ height: 25px;
     padding: 30px 0px 10px 0px;
     opacity: 0;
     visibility: hidden;
+    
 }
 
 #menu header #icon_detail_wrap #icon_detail li{
