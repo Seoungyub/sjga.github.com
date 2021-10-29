@@ -257,14 +257,14 @@
 	background: linear-gradient(to right, #53c4f5, rgb(84, 224, 80));
 }
 #timeline .demo-card--step8 .head::after {
-	border-color: #3793bb;
+	border-color: #53c4f5;
 }
 
 #timeline .demo-card--step9 {
 	background: linear-gradient(to right, #53c4f5, rgb(214, 130, 235));
 }
 #timeline .demo-card--step9 .head::after {
-	border-color: #3793bb;
+	border-color: rgb(214, 130, 235);
 }
 
 
