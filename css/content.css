@@ -376,21 +376,21 @@ button{
   /* IE10+ */
  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   #contents .shortcut_wrap .shortcut nav ul li div{
-    border-right: 1px solid black;
+    /* border-right: 1px solid black; */
   }
  }
   
 /* IE6,7,8 */
 @media \0screen\,screen\9 {
   #contents .shortcut_wrap .shortcut nav ul li div{
-    border-right: 1px solid black;
+    /* border-right: 1px solid black; */
   }
  }
 
  /* IE9,10 */
 @media screen and (min-width:0\0){
   #contents .shortcut_wrap .shortcut nav ul li div{
-    border-right: 1px solid black;
+    /* border-right: 1px solid black; */
   }
  } 
 
