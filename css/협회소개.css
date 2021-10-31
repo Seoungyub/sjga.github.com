@@ -1,4 +1,4 @@
-    .content .main_wrap .main_middle_wrap{
+    /* .content .main_wrap .main_middle_wrap{
       float: left;
       margin-left: 50px;
       width: calc(100% - 250px);
@@ -27,7 +27,7 @@
    .content .main_wrap .main_middle_wrap div .p_object{
     padding-top: 35px;
     line-height: 30px;
-  }
+  } */
 
   /* ------------------------------------------------------------middile1 협회안내*/
 
@@ -80,7 +80,7 @@
 }
 
  #timeline {
-   box-sizing: border-box;
+     box-sizing: border-box;
 	 background: #f7f7f7;
 	 border-top: 1px solid rgba(191, 191, 191, 0.4);
 	 border-bottom: 1px solid rgba(191, 191, 191, 0.4);
@@ -269,9 +269,28 @@
 
 
   /* ------------------------------------------------------------middile2 협회연역*/
-
+  
+  .middle2 #intro2_wrap{
+	width: 950px;
+	padding: 150px 0px 150px 0px;
+	text-align: center;
+	background: #f7f7f7;
+	border-top: 1px solid rgba(191, 191, 191, 0.4);
+	border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+	box-sizing: border-box;
+	overflow: hidden;
+  }
 
   /* ------------------------------------------------------------middile3 인사말*/
+
+  #boss_wrap{
+	background: #f7f7f7;
+	border-top: 1px solid rgba(191, 191, 191, 0.4);
+	border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 50px 0px 50px 0px;
+  }
 
   .middle3 .boss{
     width: 210px;
@@ -287,14 +306,9 @@
 
   .middle3 .boss p{
     font-weight: bold;
-    margin-top: 30px;
-    width: 210px;
+    margin: 30px 0px 0px 8px;
+    width: 212px;
     float: left;
-  }
-
-  .middle3 .boss p span{
-    font-size: 1.1em;
-    font-weight: 600;
   }
 
   .middle3 .boss_text{
@@ -304,13 +318,14 @@
     padding-left: 40px;
     display: inline-block;
     font-size: 0.8em;
-    
+    line-height: 16px;
   }
 
   .middle3 .boss_text span{
     font-weight: bold;
     font-size: 14px;
-    line-height: 25px;
+    line-height: 20px;
+	display: block;
   }
 
 
@@ -364,6 +379,17 @@
   }
 
   /* ------------------------------------------------------------middile5 분과위원회*/
+
+  .middle5 #intro5_wrap{
+	width: 950px;
+	padding: 150px 0px 150px 0px;
+	text-align: center;
+	background: #f7f7f7;
+	border-top: 1px solid rgba(191, 191, 191, 0.4);
+	border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+	box-sizing: border-box;
+	overflow: hidden;
+  }
 
   /* ------------------------------------------------------------middile6 오시는길*/
 
