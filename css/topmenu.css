@@ -439,11 +439,11 @@ height: 25px;
 /* 최소화 창 지원 */
 @media screen and (max-width:1199px){
     #menu_wrap{
-        width: 1400px;
+        width: 1600px;
     }
 
     #menu{
-        width: 1400px;
+        width: 1600px;
         position: relative;
   }
 }
