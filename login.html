@@ -1,66 +1,78 @@
-<!-- css 분리 필요 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>로그인</title>
-    <!-- 제이쿼리CDN -->
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 제이쿼리 CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- 스타일 -->
     <link href="css/login.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d69e61b4d.js" crossorigin="anonymous"></script>
 
     <!-- 폰트 -->
-    <script src="https://kit.fontawesome.com/8d69e61b4d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>로그인</title>
 </head>
 <body>
-    <div class="top">
+    <section class="login_wrap">
 
-        <div class="logo_wrap">
-          <a href="index.html"><img src="img/세종시골프협회2.jpg"></a>
+        <div class="login_topmenu_wrap">
+            <div class="login_topmenu"><span><p>SJGA</p> Account</span></div>
         </div>
-      
-        <div class="register_text_wrap">
-        <span class="r_text">로그인</span>
-        </div>
-      
-      </div>
-      
-      <div class="content_wrap">
-        <div class="content">
-          <ul>
-              <li><input type="text" onclick="loginbox_color1()" placeholder="아이디"></li>
-              <li><input type="password"  onclick="loginbox_color2()" placeholder="비밀번호"></li>
-          </ul>
-          <a href="index.html"><button>로그인</button></a>
-          <a href="#"><span class="search_id">아이디 찾기</span></a>
-          <a href="#"><span class="search_pw">비밀번호 찾기</span></a>
-          <a href="register.html"><span class="go_register">회원가입</span></a>
-      
-        <div class="copyright_wrap">
-          <span>Copyright ⓒ by Sejong Golf Association. All rights Reserved.</span>
-        </div>
-      </div>
-      
-      </div>
-      <script>
-        //login 반응
-function loginbox_color1(){
-   $(".content ul li").css("border","none")
-   $(".content ul li:nth-child(1)").css("border","1px solid black")
-}
 
-function loginbox_color2(){
-   $(".content ul li").css("border","none")
-   $(".content ul li:nth-child(2)").css("border","1px solid black")
-}
-      </script>
+        <div class="login_content_wrap">
+           
+                <div class="content_inner">
+                    <!-- <h1></h1> -->
+                    
+                    <div class="login_logo_img_wrap">
+                        <img src="img/SJGA_Logo.jpg"> 
+                    </div>
+
+                    <form>
+                        <input type="text" placeholder="이메일 주소 또는 전화번호">
+                        <input type="password" placeholder="이메일 주소 또는 전화번호">
+                        <div class="remember_id"><label><input type="checkbox"></div>ID 기억하기</label>
+
+                        <div class="sign_wrap">
+                            <button>로그인</button>
+                            <ul>
+                                <li><a>ID 찾기</a> 또는 <a>비밀번호 재설정</a></li>
+                                <li>계정 생성</li>
+
+                            </ul>
+                        </div>
+
+                    </form>
+                </div>
+                
+     
+         
+
+
+        </div>
+
+        <div class="login_footermenu_wrap">
+            <div class="login_footermenu">
+                <div class="footermenu_inner"><span><p>SJGA</p> Acoount</span></div>
+                <div class="footermenu_link">
+                    <a href="">이용약관</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">공지</a>
+                    <a href="">문의하기</a>
+                </div>
+                <div class="login_copyright"><span>Copyright ⓒ by Sejong Golf Association. All rights Reserved.</span></div>
+            </div>
+
+        </div>
+        
+</section>
 </body>
 </html>
