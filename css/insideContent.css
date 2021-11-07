@@ -27,6 +27,7 @@ padding-top: 0px;
  font-weight: 900;
  font-size: 1.2em;
  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+ background-image: url(/img/ptitle.gif);
 }
 
 .content .main_wrap .main_middle_wrap div .p_object{
