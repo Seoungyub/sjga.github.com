@@ -33,6 +33,13 @@ $("#icon_detail_wrap").mouseleave(function(){
     $("#menu header #icon_detail_wrap #icon_detail").removeClass("show4")
 })
 
+// topmenu의 dropdown_underline을 클릭했을때 topmenu 바로 비활성화
+$(".dropdown_underline").click(function(){
+    $("#menu").removeClass("show1")
+    $("#detail_wrap").removeClass("show1")
+    $("#detail_wrap .dropdown").removeClass("show2")
+})
+
 //들어갈만한부분 다 넣어야함 게시판, 달력, 바로가기 등등
 $(".main_img").mouseenter(function(){
     finalCheck();
@@ -150,6 +157,8 @@ if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') !
 $("#m ul li a span").removeClass("underline")
 }
 
+
+
 })
   
 //달력 Script
@@ -188,4 +197,5 @@ document.addEventListener('DOMContentLoaded', function() {
     calendar.render();
   });
 
-  
+
+
