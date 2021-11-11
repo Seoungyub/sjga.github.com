@@ -8,6 +8,10 @@ body{
     
 }
 
+a:hover{
+    cursor: pointer;
+}
+
 .login_wrap{
     height: 100%;
 }
@@ -176,6 +180,10 @@ font-size: 1.1em;
     outline: none;
     font-weight: bold;
     margin: 0 auto;
+}
+
+.content_inner button:hover{
+    cursor: pointer;
 }
 
 .content_inner ul{
