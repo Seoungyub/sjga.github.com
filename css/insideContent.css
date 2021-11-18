@@ -3,6 +3,16 @@ body {
     font-family: 'Rajdhani', sans-serif;
  }
 
+ .go_top{
+   width: 55px;
+   height: 55px;
+   position: fixed;
+   right: 40px;
+   bottom: 20px;
+   background-color: black;
+   color: white;
+ }
+
  .content .main_wrap .main_middle_wrap{
   /* float: left; */
   margin: auto 0;
