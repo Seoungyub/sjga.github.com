@@ -354,7 +354,7 @@ height: 25px;
     border: none;
     opacity: 0;
     font-size: 1.2em;
-    transition: all 1s ease-in-out;
+    /* transition: all 1s ease-in-out; */
 }
 
 .search_wrap .close.active{

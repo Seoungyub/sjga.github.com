@@ -1,5 +1,7 @@
 //TopMenu Script
 
+
+
 $("#menu header nav #m ul li a").mouseenter(function(){
     console.log("?")
     // 로그인부분 먼저 창없엠 
@@ -9,9 +11,20 @@ $("#menu header nav #m ul li a").mouseenter(function(){
     $("#menu").addClass("show1")
     $("#detail_wrap").addClass("show1")
     $("#detail_wrap .dropdown").addClass("show2")
+
+    // 투명도 index용
+     $("#contents,#footer_menu").css({"opacity" : "0.2",});
+     // 투명도 내부컨텐츠용
+     $(".content,#footer_menu").css({"opacity" : "0.2",});
 })
+
     $("#detail_wrap").mouseleave(function(){
-           finalCheck();   
+        finalCheck();  
+
+     // 투명도 index용
+     $("#contents,#footer_menu").css({"opacity" : "1",});
+     // 투명도 내부컨텐츠용
+     $(".content,#footer_menu").css({"opacity" : "1",});
 })
 
 function finalCheck(){
@@ -26,11 +39,21 @@ $("#menu header nav .icon ul li a").mouseenter(function(){
     // 그리고 실행
     $("#menu header #icon_detail_wrap").addClass("show3")
     $("#menu header #icon_detail_wrap #icon_detail").addClass("show4")
+
+    // 투명도 index용
+    $("#contents,#footer_menu").css({"opacity" : "0.2",});
+    // 투명도 내부컨텐츠용
+    $(".content,#footer_menu").css({"opacity" : "0.2",});
 })
 
 $("#icon_detail_wrap").mouseleave(function(){
     $("#menu header #icon_detail_wrap").removeClass("show3")
     $("#menu header #icon_detail_wrap #icon_detail").removeClass("show4")
+
+    // 투명도 index용
+    $("#contents,#footer_menu").css({"opacity" : "1",});
+    // 투명도 내부컨텐츠용
+    $(".content,#footer_menu").css({"opacity" : "1",});
 })
 
 // topmenu의 dropdown_underline을 클릭했을때 topmenu 바로 비활성화
@@ -40,11 +63,25 @@ $(".dropdown_underline").click(function(){
     $("#detail_wrap .dropdown").removeClass("show2")
 })
 
-//들어갈만한부분 다 넣어야함 게시판, 달력, 바로가기 등등
+//들어갈만한부분 다 넣어야함 게시판, 달력, 바로가기 등등 특정상황에서 topmenu에 빠져나왔는데도 안꺼지는걸 해결
 $(".main_img").mouseenter(function(){
     finalCheck();
     $("#menu header #icon_detail_wrap").removeClass("show3")
     $("#menu header #icon_detail_wrap #icon_detail").removeClass("show4")
+    // 투명도 index용
+    $("#contents,#footer_menu").css({"opacity" : "1",});
+    // 투명도 내부컨텐츠용
+    $(".content,#footer_menu").css({"opacity" : "1",});
+})
+//너도 위에랑 같아
+$(".content").mouseenter(function(){
+    finalCheck();
+    $("#menu header #icon_detail_wrap").removeClass("show3")
+    $("#menu header #icon_detail_wrap #icon_detail").removeClass("show4")
+    // 투명도 index용
+    $("#contents,#footer_menu").css({"opacity" : "1",});
+    // 투명도 내부컨텐츠용
+    $(".content,#footer_menu").css({"opacity" : "1",});
 })
 
 
@@ -59,6 +96,10 @@ $(".icon_search").click(function(){
     $(".close").addClass("active")
     $("#menu header #icon_detail_wrap").removeClass("show3")
     $("#menu header #icon_detail_wrap #icon_detail").removeClass("show4")
+    // 투명도 index용
+    $("#contents,#footer_menu").css({"opacity" : "0.2",});
+    // 투명도 내부컨텐츠용
+    $(".content,#footer_menu").css({"opacity" : "0.2",});
 })
 
 $(".close").click(function(){
@@ -146,20 +187,6 @@ var interleaveOffset = 0.5;
         }
     });
 
-
-    
-//IE호환성 및 반응형 제거
-$(document).ready(function(){
-    var agent = navigator.userAgent.toLowerCase();
-
-if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) 
-|| (agent.indexOf("msie") != -1) ) {
-$("#m ul li a span").removeClass("underline")
-}
-
-
-
-})
   
 //달력 Script
 document.addEventListener('DOMContentLoaded', function() {

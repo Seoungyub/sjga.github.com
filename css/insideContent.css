@@ -13,6 +13,18 @@ body {
    color: white;
  }
 
+ .go_top div{
+   color: white;
+   width: 28px;
+   height: 32px;
+   margin: 0 auto;
+   margin-top: 11.5px;
+ }
+
+ .go_top div i{
+   font-size: 2em; 
+ }
+
  .content .main_wrap .main_middle_wrap{
   /* float: left; */
   margin: auto 0;
@@ -73,41 +85,12 @@ line-height: 30px;
      overflow: hidden;
     }
 
-     /* ------------------------------------------------------------옆에 소메뉴*/
- 
-
-    
-
-   /* @media screen and (max-width:1919px){
-     
-    .content .main_wrap{
-    width: 100%;
-    margin: 0 auto;
-   }
-
-   .content .main_wrap .main_left_wrap .fix_wrap{
-     left: calc(20% - 250px);
-   }
-    } */
-
     /* 이미지가 1920, 1600에 지원되면 굳이 80%처리 할 필요가 없음. 단, 고사향(큰)모니터에서 어떻게 보이는지 확인할 것.. 이라는 가설 준비중 */
     @media screen and (min-width:1920px){
         .content .ganpan{
           width: 1920px;
           margin: 0 auto;
         }
-       }
-
-    @media screen and (max-width:1919px){
-        /* .content .main_wrap .main_left_wrap .fix_wrap{
-          width: 180px;
-          font-size: 0.8em;
-        }
-
-        .content .main_wrap .main_left_wrap .fix_wrap ul li{
-          padding: 7px 0px 7px 0px;
-        } */
-
        }
 
        @media screen and (max-width:1199px){
@@ -121,14 +104,6 @@ line-height: 30px;
           width: 1200px;
           margin: 0 auto;
         } */
-
-        /* fiexd 제거하고 위로 고정 */
-        /* 임시조치, 최소화창 사용시 전체 퍼센테이지를 조절해야할 수 도 있음 */
-
-        .content .main_wrap .main_left_wrap .fix_wrap{
-          position: relative;
-          margin-left: 30px;
-        }
 
        }
       
