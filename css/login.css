@@ -8,6 +8,10 @@ body{
     
 }
 
+a{
+    color: black;
+}
+
 a:hover{
     cursor: pointer;
 }
@@ -94,6 +98,10 @@ outline: none;
 margin: 0 auto;
 margin-bottom: 30px;
 font-size: 1.1em;
+}
+
+#userid:focus, #userpassword:focus{
+    border-bottom: 1px solid #0072de;
 }
 
 #userpassword{

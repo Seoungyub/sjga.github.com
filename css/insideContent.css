@@ -91,6 +91,16 @@ line-height: 30px;
           width: 1920px;
           margin: 0 auto;
         }
+
+        .content .main_wrap .main_middle_wrap{
+          /* float: left; */
+          margin: auto 0;
+          
+          width: 100%;
+          overflow: hidden;
+          box-sizing: border-box;
+        }
+
        }
 
        @media screen and (max-width:1199px){
