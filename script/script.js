@@ -86,6 +86,12 @@ $(".content").mouseenter(function(){
 
 
 //아이콘부분
+//서비스준비중입니다로 비활성화 2022.01.01
+
+$(".icon_search").click(function(){
+    alert("서비스 준비중입니다.")
+})
+/* 
 $(".icon_search").click(function(){
     $("header").hide();
     $(".search_wrap").css("height","85px")
@@ -101,7 +107,9 @@ $(".icon_search").click(function(){
     // 투명도 내부컨텐츠용
     $(".content,#footer_menu").css({"opacity" : "0.2",});
 })
+*/
 
+/* 
 $(".close").click(function(){
     $("header").show();
     $(".search_hidden").removeClass("active")
@@ -109,17 +117,20 @@ $(".close").click(function(){
     $(".close").removeClass("active")
     $(".search_wrap").css("height","0px")
 })
+*/
 
+/* 
 function enterkey() {
     if (window.event.keyCode == 13) {
 
          console.log("!")
     }
 }
+*/
 
 
 
-
+//index.html 메인사진들
 //머지
 // var menu = [];
 //     jQuery('.swiper-slide').each( function(index){
@@ -188,7 +199,7 @@ var interleaveOffset = 0.5;
     });
 
   
-//달력 Script
+//달력 Script 비활성화
 document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
   
