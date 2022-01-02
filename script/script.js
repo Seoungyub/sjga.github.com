@@ -84,10 +84,15 @@ $(".content").mouseenter(function(){
     $(".content,#footer_menu").css({"opacity" : "1",});
 })
 
+//로그인시스템 클릭 비활성화처리 2022.01.01
+$("#icon_detail_wrap #icon_detail").click(function(){
+    alert("서비스 준비중입니다.")
+    console.log("!")
+})
+
 
 //아이콘부분
 //서비스준비중입니다로 비활성화 2022.01.01
-
 $(".icon_search").click(function(){
     alert("서비스 준비중입니다.")
 })
@@ -200,6 +205,7 @@ var interleaveOffset = 0.5;
 
   
 //달력 Script 비활성화
+/*
 document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
   
@@ -234,6 +240,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     calendar.render();
   });
-
-
-
+*/
