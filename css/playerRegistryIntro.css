@@ -1,0 +1,69 @@
+/* body{
+	font-family: 'Noto Sans KR', sans-serif;
+} */
+
+.middle1 #playreg1_wrap{
+	width: 950px;
+	padding: 50px 0px 50px 0px;
+	text-align: center;
+	background: #f7f7f7;
+	border-top: 1px solid rgba(191, 191, 191, 0.4);
+	border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+	box-sizing: border-box;
+	overflow: hidden;
+    line-height: 30px;
+	/* font-weight: 500; */
+  }
+
+  .middle2 #playreg2_wrap{
+	width: 950px;
+	padding: 50px 0px 50px 0px;
+	text-align: center;
+	background: #f7f7f7;
+	border-top: 1px solid rgba(191, 191, 191, 0.4);
+	border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+	box-sizing: border-box;
+	overflow: hidden;
+    line-height: 30px;
+	/* font-weight: 300; */
+  }
+
+  .middle3 #playreg3_wrap{
+	width: 950px;
+	padding: 50px 0px 50px 0px;
+	text-align: center;
+	background: #f7f7f7;
+	border-top: 1px solid rgba(191, 191, 191, 0.4);
+	border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+	box-sizing: border-box;
+	overflow: hidden;
+    line-height: 30px;
+	/* font-weight: 300; */
+  }
+
+  .gotoplayreg{
+	  display: inline-block;
+      margin-top: 30px;
+      /* border: 0.1px solid black; */
+      padding: 10px;
+      box-shadow: 0 0 3px 0 black;
+	  background-color: #d3d3d3;
+	  /* font-weight: 500; */
+  }
+
+  @media screen and (min-width:1920px){
+
+   .middle1 #playreg1_wrap{
+		width: 1200px;
+   }
+
+   .middle2 #playreg2_wrap{
+	width: 1200px;
+   }
+  
+   .middle3 #playreg3_wrap{
+	width: 1200px;
+   }
+
+
+}

@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    /* background-color: rgba(76, 73, 72, 1); */
+ }
+
+ button{
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a{
+  cursor: pointer;
+}
+
+/* ============================================================================================================================= */
+/* 간판 */
+ 
+  .contents .ganpan{
+    width: 100%;
+    height: 100vh;
+    color: black;
+    /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(css_background_img/mainContentImgTest2.jpg); */
+    background-image: url(css_background_img/mainContentImgTest2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .contents .ganpan img{
+   width: 100%;
+   height: 100%;
+   filter:invert();
+  }
+
+  .shortcut{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  }
+
+  .shortcut1{
+    padding-top: 200px;
+    width: 1000px;
+    height: 90px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .shortcut_title{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: -1px;
+  }
+
+  .shortcut_line{
+    display: block;
+    height: 1px;
+    width: 200px;
+    background: white;
+    margin: 15px auto 0 auto;
+    
+  }
+
+  .shortcut_text{
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+  }
+
+
+  .shortcut2_wrap{
+    width: 1340px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+  }
+
+  .shortcut2 li{
+    top: 70px;
+    width: 260px;
+    height: 350px;
+   border: 1px solid #d9d9d9;
+   float: left;
+   /* margin: 0 5px; */
+   position: relative;
+   -webkit-transition: all 0.7s, -webkit-transform 0.7s;
+   transition: all 0.7s, transform 0.7s;
+   margin-right: 10px;
+   box-sizing: border-box;
+  }
+
+  .shortcut li:last-child{
+    margin-right: 0px;
+  }
+
+  .shortcut2 li:hover{
+  background-color: rgba(0, 92, 255, 30);
+  color: white;
+  box-shadow: 0 4px 10px -4px black;
+  }
+
+  .shortcut2 li:hover .shortcut2_button{
+   -webkit-transition: all 0.7s, -webkit-transform 0.7s;
+   transition: all 0.7s, transform 0.7s;
+   border: 1px solid white;
+   color: white;
+   
+   }
+
+   .shortcut2 li:hover img{
+     -webkit-transition: all 0.7s, -webkit-transform 0.7s;
+   transition: all 0.7s, transform 0.7s;
+   /* filter:invert(); */
+   }
+
+
+
+  .shortcut2 dl{
+    padding-top: 40px;
+
+  } 
+
+  
+  .shortcut2 dl span{
+    margin: 0 auto;
+    display: block;
+    width: 50px;
+    height: 50px;
+   margin-bottom: 20px;
+  }
+  
+  .shortcut2 img{
+   margin: 0 auto;
+   width: 50px !important;
+   height: 50px !important;
+ }
+
+  .shortcut2 dt{
+   font-size: 16px;
+   margin-top: 20px;
+   margin-bottom: 35px;
+   text-align: center;
+   color: white;
+ }
+
+ .shortcut2 dd{
+   width: 240px;
+   margin: 0 auto;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+ }
+
+ 
+
+ .shortcut2_button_link{
+   width: 130px;
+   height: 33px;
+ }
+
+ .shortcut2_button{
+   position: absolute;
+   width: 130px;
+   height: 33px;
+   line-height: 33px;
+   border: 1px solid white;
+   border-radius: 3px;
+   font-size: 13px;
+   text-align: center;
+   color: white;
+   bottom: 30px;
+   left: 50%;
+   margin-left: -66px;
+   -webkit-transition: all 0.5s, -webkit-transform 0.5s;
+   transition: all 0.5s, transform 0.5s;
+  } 
+
+
+/* ============================================================================================================================= */
+/* 메인컨텐츠 */
+    .contents{
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .content_wrap{
+      width: 100%;
+      height: 6000px;
+      position: relative;
+      background: rgb(246, 244, 244);
+      }
+      .content{
+      padding-top: 200px;
+      width: 1000px;
+      height: 100%;
+      text-align: center;
+      margin: 0 auto;
+      }
+    
+      .content1{
+      width: 100%;
+      margin-bottom: 120px;
+      height: 90px;
+      }
+    
+      .content_title{
+       font-size: 32px;
+       text-align: center;
+       margin-bottom: 30px;
+       color: #494949;
+       font-weight: 100;
+       letter-spacing: -1px;
+      }
+    
+      .content_line{
+       display: block;
+       height: 1px;
+       width: 200px;
+       background: #494949;
+       margin: 15px auto 0 auto;
+      }
+    
+      .content_text{
+       font-size: 20px;
+       line-height: 30px;
+      }
+
+    
+    /* 이미지가 1920, 1600에 지원되면 굳이 80%처리 할 필요가 없음. 단, 고사향(큰)모니터에서 어떻게 보이는지 확인할 것.. 이라는 가설 준비중 */
+    @media screen and (min-width:1920px){
+        .content .ganpan{
+          width: 1920px;
+          margin: 0 auto;
+        }
+       }
+
+       @media screen and (max-width:1199px){
+        
+        .content{
+          width: 1600px;
+          margin: 0 auto;
+        } 
+       }
+      

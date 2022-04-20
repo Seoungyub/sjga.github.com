@@ -1,0 +1,288 @@
+/* ============================================================================================================================= */
+/* 메인화면1 */
+ #timeline {
+	 position: relative;
+     box-sizing: border-box;
+	 border-top: 1px solid rgba(191, 191, 191, 0.4);
+	 border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+	 
+}
+
+.circle{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: rgb(246, 244, 244);
+	z-index: 98;
+	left: calc(50% - 10px);
+	
+}
+
+.circleStep1{
+	top: 200px;
+}
+
+.circleStep2{
+	top: 800px;
+}
+
+.circleStep3{
+	top: 1400px;
+}
+
+.circleStep4{
+	top: 2000px;
+}
+
+.circleStep5{
+	top: 2600px;
+}
+
+.circleStep6{
+	top: 3200px;
+}
+
+.circleStep7{
+	top: 3800px;
+}
+
+.circleStep8{
+	top: 4400px;
+}
+
+.circleStep9{
+	top: 5000px;
+}
+
+
+
+.inerCircle{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(93, 93, 93, 0.4);
+	left: calc(50% - 5px);
+	top: calc(50% - 5px);
+	z-index: 99;
+}
+
+.middleLine{
+	position: absolute;
+	width: 1px;
+	height: 5500px;
+	background-color: rgba(93, 93, 93, 0.4);
+	top: 0px;
+	left: calc(50% - 0.5px);
+	z-index: 97;
+}
+
+.timeline_wrap{
+	width: 450px;
+	height: 430px;
+	position: absolute;
+	box-sizing: border-box;
+}
+
+.timeline1{
+	position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+	z-index: 101;
+}
+
+.timeline1::after{
+  top: 25%;
+  z-index: 1;
+  content: ' ';
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: 20px solid transparent;
+}
+
+.timeline1Box1{
+	display: inline;
+    float: left;
+    margin: 15px;
+    padding: 10px;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.17);
+}
+
+.timeline1Box2 h2{
+	text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: inherit;
+    letter-spacing: 2px;
+    margin: 0;
+    padding-bottom: 6px;
+    line-height: 1rem;
+	text-align: left;
+}
+
+.timeline1Box2 h2 span{
+	display: block;
+    font-size: 0.6rem;
+    margin: 0;
+}
+
+.timeline2{
+	background: #fff;
+    border-top: 0;
+    padding: 15px;
+	height: 315px;
+}
+
+.timeline2 p{
+	font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+
+.timelineStep1 {
+	background: linear-gradient(to right, #53c4f5, rgb(233, 233, 233));
+	top: 167px;
+}
+.timelineStep1 .timeline1::after{
+    border-left-color: rgb(233, 233, 233);
+	border-right-width: 0;
+	right: -15px;
+}
+
+
+.timelineStep2{
+	background: linear-gradient(to right, #53c4f5, rgb(233, 233, 233));
+	right: 0px;
+	top: 767px;
+}
+.timelineStep2 .timeline1::after{
+    border-right-color: #53c4f5;
+	border-left-width: 0;
+	left: -15px;
+}
+
+
+.timelineStep3{
+	background: linear-gradient(to right, #53c4f5, rgb(235, 130, 130));
+	top: 1367px;
+}
+.timelineStep3 .timeline1::after{
+    border-left-color: rgb(235, 130, 130);
+	border-right-width: 0;
+	right: -15px;
+}
+
+
+.timelineStep4{
+	background: linear-gradient(to right, #53c4f5, rgb(235, 130, 130));
+	right: 0px;
+	top: 1967px;
+}
+.timelineStep4 .timeline1::after{
+    border-right-color: #53c4f5;
+	border-left-width: 0;
+	left: -15px;
+}
+
+
+.timelineStep5{
+	background: linear-gradient(to right, #53c4f5, rgb(228, 235, 130));
+	top: 2567px;
+}
+.timelineStep5 .timeline1::after{
+    border-left-color: rgb(228, 235, 130);
+	border-right-width: 0;
+	right: -15px;
+}
+
+.timelineStep6{
+	background: linear-gradient(to right, #53c4f5, rgb(228, 235, 130));
+	right: 0px;
+	top: 3167px;
+}
+.timelineStep6 .timeline1::after{
+    border-right-color: #53c4f5;
+	border-left-width: 0;
+	left: -15px;
+}
+
+.timelineStep7{
+	background: linear-gradient(to right, #53c4f5, rgb(84, 224, 80));
+	top: 3767px;
+}
+.timelineStep7 .timeline1::after{
+    border-left-color: rgb(84, 224, 80);
+	border-right-width: 0;
+	right: -15px;
+}
+
+.timelineStep8{
+	background: linear-gradient(to right, #53c4f5, rgb(84, 224, 80));
+	right: 0px;
+	top: 4367px;
+}
+.timelineStep8 .timeline1::after{
+    border-right-color: #53c4f5;
+	border-left-width: 0;
+	left: -15px;
+}
+
+
+.timelineStep9{
+	background: linear-gradient(to right, #53c4f5, rgb(214, 130, 235));
+	top: 4967px;
+}
+.timelineStep9 .timeline1::after{
+    border-left-color: rgb(214, 130, 235);
+	border-right-width: 0;
+	right: -15px;
+}
+
+  
+/* 1920부터는 내부컨텐츠의 사이즈가 950에서 1200으로 늘어나니까 */
+
+  @media screen and (min-width:1920px){
+/*
+	#timeline .demo-card-wrapper {
+		width: 1200px;
+   }
+
+   #timeline .demo-card {
+	width: 500px;
+   }
+
+   #timeline .demo-card:nth-child(odd) .head::before {
+	left: 540.5px;
+   }
+
+   #timeline .demo-card:nth-child(even) .head::before {
+	right: 540.5px;
+   }
+
+   .middle2 #intro2_wrap{
+		width: 1200px;
+   }
+
+   .middle5 #intro5_wrap{
+		width: 1200px;
+   }
+
+   .middle6 #intro6_wrap{
+	width: 1200px;
+}
+
+	#map{
+		width:1200px; 
+   }
+
+  #boss_wrap .b_wrap{
+	  width: 1150px;
+  }*/
+} 
