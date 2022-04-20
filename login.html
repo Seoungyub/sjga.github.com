@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+
+    <!-- 제이쿼리 CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- 스타일 -->
+    <link href="css/login.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92e1377aa5.js" crossorigin="anonymous"></script>
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="login_wrap">
+
+        <div class="login_topmenu_wrap">
+            <div class="login_topmenu"><span><p>SJGA</p> Account</span></div>
+        </div>
+
+        <div class="login_content_wrap">
+           
+                <div class="content_inner">
+                    <!-- <h1></h1> -->
+                    
+                    <div class="login_logo_img_wrap">
+                        <a href="index.html"><img src="img/SJGA_Logo.jpg"></a>
+                    </div>
+
+                    <form>
+                        <input type="text" id="userid" placeholder="이메일 주소 또는 전화번호">
+                        <input type="password" id="userpassword" placeholder="비밀번호">
+
+                        <div class="remember_wrap">
+                        <div class="remember_id">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">ID 기억하기</label>
+                        </div>
+                    </div>
+
+                        <div class="sign_wrap">
+                            <button>로그인</button>
+                            <ul>
+                                <li><a>ID 찾기</a> 또는 <a>비밀번호 재설정</a></li>
+                                <li><a href="register.html">계정 생성</a></li>
+
+                            </ul>
+                        </div>
+
+                    </form>
+                </div>
+                
+     
+         
+
+
+        </div>
+
+        <div class="login_footermenu_wrap">
+            <div class="login_footermenu">
+                <div class="footermenu_inner"><span><p>SJGA</p> Account</span></div>
+                <div class="footermenu_link">
+                    <a href="">이용약관</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">공지</a>
+                    <a href="">문의하기</a>
+                </div>
+                <div class="login_copyright"><span>Copyright ⓒ by Sejong Golf Association. All rights Reserved.</span></div>
+            </div>
+
+        </div>
+        
+</section>
+
+<!-- 스크립트 -->
+<script  src="script/login.js"></script>
+</body>
+</html>
