@@ -1,0 +1,44 @@
+/* ============================================================================================================================= */
+/* 메인화면1 */
+
+
+  .content_wrap{
+  height: 2000px !important;
+  }
+
+    #sjgaNavi{
+        width: 100%;
+        position: relative;
+    }
+/* KakaoMap CSS */
+   #map{
+    margin-top: 10px;
+    width:1000px; 
+    height:600px; 
+    border:1px solid black;
+    box-sizing: border-box;
+  }
+
+  table{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .tbody{
+    display: table-row-group;
+    vertical-align: middle;
+  }
+
+  tr{
+    display: table-row;
+  }
+
+  td{
+    padding: 8px 12px;
+    font-size: 1em;
+    border: 0;
+    font-weight: 200;
+    text-align: left;
+  }
+
