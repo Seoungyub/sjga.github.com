@@ -253,7 +253,7 @@ body {
   height: 100%; 
   position : relative; 
   z-index: 9999;
-  background-image : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important
+/*   background-image : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important */
 }
 
 .swiperText1_wrap{
