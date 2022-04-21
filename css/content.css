@@ -253,7 +253,7 @@ body {
   height: 100%; 
   position : relative; 
   z-index: 9999;
-/*   background-image : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important */
+  background-image : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important
 }
 
 .swiperText1_wrap{
@@ -261,7 +261,7 @@ body {
   top: 200px;
   width: 1000px;
   height: 300px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   left: 200px;
 }
 
