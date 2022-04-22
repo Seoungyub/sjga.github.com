@@ -1,0 +1,425 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Nanum Gothic";
+    /* position: relative; */
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+/* 큰화면 반응형으로 작업할때 상단메뉴 줄이는거 */
+header{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* ================================================================================================================================== */
+/* 로고 */
+.logo_wrap{
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    padding: 15px 20px 15px 30px;
+    left: 20px;
+    top: 0px;
+    z-index: 99999;
+   }
+   
+   .logo_wrap a{
+      display: block;
+   }
+   
+   .logo_wrap img{
+    width: 100%;
+    height: 100%;
+   } 
+
+/* ================================================================================================================================== */
+/* 상단메뉴 */
+
+#menu_wrap{
+    position: relative; /* 원래 absolute 수정2022.04.17*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#menu{
+    width: 100%;
+    /* box-shadow: 0 0 3px 0; */
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    margin-top: 0;
+    height: 85px;
+    background-color: rgba(0, 0, 0, 0.0);
+    transition: all 0.3s ease-in-out;
+}
+
+ /* IE10+
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #menu{
+       position: fixed;
+    }
+   }
+    
+  IE6,7,8
+@media \0screen\,screen\9 {
+    #menu{
+        position: fixed;
+    }
+   }
+
+   IE9,10
+@media screen and (min-width:0\0){
+    #menu{
+        position: fixed;
+    }
+   }  */
+   
+
+
+#menu header{
+ position: relative;
+}
+
+#menu header nav #m{
+margin-left: 340px;
+width: 600px;
+height: 60px;
+float: left;
+}
+
+#menu header nav #m ul li{
+    width: 150px;
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 900;
+    display: inline-block; /* ul의 display는 block형식이기때문에 정렬을 위해 바꿈 */
+    font-size: 1.0em;
+}
+
+#menu header nav #m a .underline{
+  position: relative;
+}
+
+#menu header nav #m a .underline::after{
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: 0.3s;
+    width: 0;
+}
+
+#menu header nav #m a .underline:hover::after{
+    width: 100%; 
+    left: 0;
+}
+
+#detail_wrap{
+    opacity: 0;
+    visibility: hidden;
+    background: white;
+    height: 0px;
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+#detail_wrap .dropdown{
+     float: left;
+     margin-left: 0px;
+     max-width: 156px;    
+     opacity: 0;
+     visibility: hidden;
+}
+
+#detail_wrap .dropdown:nth-child(1){
+    margin-left: 340px;
+}
+
+#detail_wrap .dropdown ul li{
+    width: 150px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+#detail_wrap .dropdown a:hover{
+    font-weight: 600;
+}
+
+.dropdown_underline{
+    position: relative;
+    
+}
+
+.dropdown_underline::before{
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0; right: 0;
+  height: 2px;
+  background-color: gray;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0s, transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_underline:hover::before{
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.2s, transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+
+#menu.show1{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
+    height: 280px;
+}
+
+#detail_wrap.show1{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
+    height: 210px;
+}
+
+#detail_wrap .dropdown.show2{
+    transition: all 1s;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* ================================================================================================================================== */
+/* 로그인창 바로가기 */
+
+.btn_directLogin{
+    position: fixed;
+    width: 85px;
+    height: 85px;
+    right: 120px;
+    top: 0px;
+    z-index: 99998;
+    /* transition: all 0.2s ease-in-out; */ /* 유저컨트롤 색변경이 끝나고 바로처리되기때문에 transition을 주면안되더라 */
+    /* border: 1px solid aqua; */
+    box-sizing: border-box;
+}
+
+#btn_directLoginActiver{
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    z-index: 99999;
+    /* border: 1px solid red; */
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.directLoginControl{
+    position: fixed;
+    width: 0px;  /*누르면 320으로 늘림 */
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    border: 1px solid red;
+    /* transition: all 0.2s ease-in-out; */
+    z-index: 9990;
+    box-sizing: border-box;
+}
+
+/* ================================================================================================================================== */
+/* 유저 컨트롤 */
+
+.btn_control{
+    position: fixed;
+    width: 85px;
+    height: 85px;
+    right: 0px;
+    top: 0px;
+    z-index: 99998;
+    transition: all 0.3s ease-in-out;
+    /* border: 1px solid black; */
+}
+
+#btn_controlActiver{
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    font-size: 2em;
+    color: white;
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 25px;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+.userControl{
+    position: fixed;
+    width: 0px;  /*누르면 320으로 늘림 */
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    border: 1px solid red;
+    transition: all 0.3s ease-in-out;
+    z-index: 9990;
+    box-sizing: border-box;
+}
+
+.btn_controlActive{
+    right: 320px;
+}
+
+.userControlActive{
+    width: 320px;
+}
+
+
+/* ================================================================================================================================== */
+/* 해상도 반응형 */
+
+/* 
+@media screen and (max-width:999px){
+    header{
+        width: 1400px;
+    }
+} */
+
+
+
+
+/* 1920전까지 */
+@media screen and (max-width:1919px){
+   header{
+       width: 100%;
+   }
+}
+
+/* 1920부터 */
+@media screen and (min-width:1920px){
+
+    /* #menu_wrap{
+        height: 2000px; 메뉴바 ㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂ 전체 길이만큼 설정
+    } */
+    
+    /* header{
+        width: 80%;
+        margin: 0 auto;
+    } */
+
+    /* 1920 x 1080은 상단메뉴가 width100으로 되어잇음 */
+    /* #menu .logo_wrap{
+        width: 250px;
+        height: 75px;
+        padding: 15px 20px 10px 30px;
+    } */
+
+
+    /* #menu header nav .icon ul li{
+        padding-top: 40px;
+    }
+
+    #menu header nav #m ul li{
+        padding-top: 40px;
+    }
+
+    #menu header #icon_detail_wrap{
+        top: 80px;
+    }
+
+    .search_wrap .close{
+        top: 20px;
+    }
+
+    .search_wrap .search_hidden{
+        top: 20px;
+    }
+
+    #detail_wrap{
+        margin-left: 180px;
+    }
+          */
+    /* .search_wrap .search_hidden.active{
+        width: 40%;
+        left: 30%;
+    }
+
+    .search_wrap .close{
+       left: 60%;
+    }
+    
+    .search_wrap .close.active{
+        left: 70%;
+    } */
+
+}
+
+/* 최소화 창 지원 */
+@media screen and (max-width:1199px){
+    #menu_wrap{
+        width: 1600px;
+    }
+
+    #menu{
+        width: 1600px;
+        position: relative;
+  }
+}
+
+
+ /* IE10+ */
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #contents .shortcut_wrap .shortcut nav ul li div{
+      border-right: 1px solid black;
+    }
+   }
+    
+  /* IE6,7,8 */
+  @media \0screen\,screen\9 {
+    #contents .shortcut_wrap .shortcut nav ul li div{
+      border-right: 1px solid black;
+    }
+   }
+  
+   /* IE9,10 */
+  @media screen and (min-width:0\0){
+    #contents .shortcut_wrap .shortcut nav ul li div{
+      border-right: 1px solid black;
+    }
+   } 
